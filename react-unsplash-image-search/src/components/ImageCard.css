@@ -1,0 +1,26 @@
+.image-card {
+    position: relative;
+}
+
+.user-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #e5e5e5;
+}
+
+.image-description {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #e5e5e5;
+}
+
+.image-avatar {
+    height: 30px;
+    width: 30px !important;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 20px;
+    margin-right: 10px;
+}
