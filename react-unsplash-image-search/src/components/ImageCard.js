@@ -1,3 +1,4 @@
+import './ImageCard.css';
 import React from 'react';
 
 class ImageCard extends React.Component {
@@ -22,10 +23,18 @@ class ImageCard extends React.Component {
   }
 
   render() {
-    const { description, urls } = this.props.image;
+    const { description, urls, user } = this.props.image;
     return (
-      <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
+      <div className="image-card" style={{ gridRowEnd: `span ${this.state.spans}` }}>
         <img ref={this.imageRef} alt={description} src={urls.regular} />
+        <div className="image-description">
+          { description }
+        </div>
+        {/* TODO add ref for avatar */}        
+        <div className="user-info">
+          <img className="image-avatar" alt={description} src={user.profile_image.medium} />
+          <span>{user.name}</span>
+        </div>
       </div>
     );
   }
