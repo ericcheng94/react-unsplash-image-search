@@ -27,13 +27,13 @@ class ImageCard extends React.Component {
     return (
       <div className="image-card" style={{ gridRowEnd: `span ${this.state.spans}` }}>
         <img ref={this.imageRef} alt={description} src={urls.regular} />
-        <div className="image-description">
-          { description }
-        </div>
         {/* TODO add ref for avatar */}        
         <div className="user-info">
           <img className="image-avatar" alt={description} src={user.profile_image.medium} />
-          <span>{user.name}</span>
+          <span className="user-name">{user.name}</span>
+          <div className="image-description">
+          { description }
+        </div>
         </div>
       </div>
     );

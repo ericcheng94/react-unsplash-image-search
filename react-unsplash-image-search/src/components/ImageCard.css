@@ -1,5 +1,8 @@
 .image-card {
     position: relative;
+    background:
+        linear-gradient(rgba(255,0,0,1)),
+        linear-gradient(rgba(255,0,0,1));
 }
 
 .user-info {
@@ -11,16 +14,23 @@
 
 .image-description {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    white-space: nowrap;
+    font-style: italic;
+    bottom: 5px;
     color: #e5e5e5;
 }
 
+.user-name {
+    position: absolute;
+    white-space: nowrap;
+    bottom: 40px;
+    left: 40px;
+}
+
 .image-avatar {
+    position: absolute;
     height: 30px;
     width: 30px !important;
     border-radius: 50%;
-    bottom: 20px;
-    left: 20px;
-    margin-right: 10px;
+    bottom: 35px;
 }
