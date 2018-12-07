@@ -1,9 +1,10 @@
 .image-card {
     position: relative;
-    background:
-        linear-gradient(rgba(255,0,0,1)),
-        linear-gradient(rgba(255,0,0,1));
 }
+
+/* .image {
+    position: absolute;
+} */
 
 .image-dimensions {
   position: absolute;
