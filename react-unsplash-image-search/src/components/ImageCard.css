@@ -2,10 +2,6 @@
     position: relative;
 }
 
-/* .image {
-    position: absolute;
-} */
-
 .image-dimensions {
   position: absolute;
   top: 10px;
@@ -24,6 +20,7 @@
     position: absolute;
     white-space: nowrap;
     font-style: italic;
+    font-size: 12px;
     bottom: 5px;
     color: #e5e5e5;
 }
@@ -41,4 +38,8 @@
     width: 30px !important;
     border-radius: 50%;
     bottom: 35px;
+}
+
+.noborder{
+  background: transparent !important
 }

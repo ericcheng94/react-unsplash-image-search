@@ -1,10 +1,11 @@
-/* .image-list {
+.image-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 0 15px;
     grid-auto-rows: 15px;
-} */
+}
 
 .image-list img {
-    width: 400px;
+    width: 300px;
+    filter: brightness(85%);
 }
